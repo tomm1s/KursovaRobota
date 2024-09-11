@@ -1,0 +1,242 @@
+body{
+  margin: 0;
+}
+.container1 {
+    display: inline-block;
+    cursor: pointer;
+    color: #FF9900;
+    padding: 20px;
+    border-style:solid;
+    background-color: #FF9900;
+    text-align: center;
+ }
+.container2 {
+    display: inline-block;
+    cursor: pointer;
+    padding: 20px;
+    text-align: center;
+}
+  
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+  
+  /* Rotate first bar */
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+  
+  /* Fade out the second bar */
+.change .bar2 {opacity: 0;}
+  
+  /* Rotate last bar */
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+.logo{
+width: 70px;
+height: 70px;
+float: left;
+}
+div{
+  float: none;
+}
+h1{
+  text-align: center;
+  color: black;
+}
+h2{
+  text-align: center;
+}
+img{
+  position: relative;
+  float: inline-start;
+  width: 33.33%;
+  height: 33.33%;
+  border-radius: 4px;
+}
+p{
+  display: inline;
+  text-align: center;
+}  
+button{
+  position: relative;
+  height: 50px;
+  width: 100px;
+  background-color: #FF9900;
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+#sticky-footer {
+  padding: 14px 0;
+  background: #FFCF72 ;  /* optional */
+  color: black;
+  text-align: center; /* optional */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+#sticky-footer1 {
+  padding: 14px 0;
+  background: #FFCF72 ;  /* optional */
+  color: black;
+  text-align: center; /* optional */
+  position: relative;
+  bottom: auto;
+  width: 100%;
+  left: 0;
+  overflow: hidden;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #FFCF72;
+  position: relative;
+  display: right;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 30px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: #FF9900;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  
+}
+.topnav a:hover {
+  background-color: #FF9900;
+  color: gray;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color:#FFCF72;
+  color: black;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: inline-block;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float:inline-start;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 360px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: max-content;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
