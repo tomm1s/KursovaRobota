@@ -5,44 +5,164 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Головна</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
+    <title>Джерела</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .topnav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #FFCF72;
+        }
+
+        .topnav img.logo {
+            height: 70px;
+            width: auto;
+        }
+
+        .topnav a {
+            color: black;
+
+            text-decoration: none;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+          background-color: transparent;
+      color: black;
+      flex: 1; 
+      display: flex;
+      justify-content: center; 
+      align-items: center; 
+      text-align: center; 
+        }
+
+        .topnav .icon {
+            display: none;
+        }
+
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #sticky-footer1 {
+            background-color: #FFCF72;
+            color: black;
+            text-align: center;
+            padding: 10px 0;
+            position: sticky;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #sticky-footer1 a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #sticky-footer1 a:hover {
+            color: #ddd;
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav a:not(:first-child) {display: none;}
+            .topnav a.icon {
+                display: block;
+            }
+            .image-gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
 <div class="topnav">
-  <div><img src="images/logo.png" alt="logo" class="logo"></div>
-  <a href="#home" class="active"><center>Найвідоміші мікромініатюри Маслюка Михайла Григоровича</center></a>
-  <div id="myLinks">
-    <a href="index.html">Біографія</a>
-    <a href="exhibition.html">Мікромініатюри</a>
-    <a href="source.html">Джерело</a>
-  </div>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
+    <div><img src="images/logo.png" alt="logo" class="logo"></div>
+    <a href="#home" class="active">Найвідоміші мікромініатюри Маслюка Михайла Григоровича</a>
+    <div id="myLinks">
+        <a href="index.html">Біографія</a>
+        <a href="exhibition.html">Мікромініатюри</a>
+        <a href="source.html">Джерело</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
 </div> 
-<br>
+
+<div class="image-gallery">
+    <img src="images/tractor3d.png" alt="Трактор мініатюра">
+    <img src="images/bee3d.png" alt="Бджола мініатюра">
+    <img src="images/sherlock3d.png" alt="Шерлок мініатюра">
+    <img src="images/needle3d.png" alt="Голка мініатюра">
+    <img src="images/castle3d.png" alt="Замок мініатюра">
+    <img src="images/bloxa3d.png" alt="Блоха мініатюра">
+    <img src="images/train3d.png" alt="Потяг мініатюра">
+    <img src="images/camel3d.png" alt="Верблюд мініатюра">
+    <img src="images/lock3d.png" alt="Замок мініатюра">
+    <img src="images/train3d.gif" alt="Анімація потяга">
 </div>
-  <img src="svg/Asset 22.svg" alt="">
-  <img src="svg/Asset 23.svg" alt="">
-  <img src="svg/Asset 24.svg" alt="">
-  <img src="svg/Asset 25.svg" alt="">
-  <img src="svg/Asset 26.svg" alt="">
-  <img src="svg/Asset 27.svg" alt="">
-  <img src="svg/Asset 28.svg" alt="">
-  <img src="svg/Asset 29.svg" alt="">
-  <img src="svg/Asset 31.svg" alt="">
-  <img src="images/train.gif" alt="">
-  <br>
-  <br>
-  <center><h1>Жмеринський міський історичний музей</h1></center>
-  <h1>Колекція музею нараховує 3,3 тис. предметів. Унікальними є роботи Заслуженого майстра народної творчості України, мікромініатюриста Михайла Маслюка, фотографії та листівки станції Жмеринка з краєвидами міста початку ХХ ст. У експозиційних залах музею представлений побут жмеринчан кінця ХІХ — початку XX століття (меблі, музичні інструменти, особисті речі, фотокартки та сімейні документи). Працює виставкова зала, де проходять виставки та презентації робіт художників, майстрів народної творчості та музична вітальня.</h1>
-   <center><img src="images/museum.jpg" alt="Жмеринський міський історичний музей"></center>    
-      <div id="sticky-footer1">
-        <div class="wrap">
-          <p>Більше інфорvації дивіться на <a href="https://shorturl.at/7hpxP">zhmerynka.city/articles/104924.сом</a></p>
-        </div>
-      </div>
-      
-    <script src="script.js"></script>
+
+<div class="content">
+    <h1>Джерело мікромініатюри</h1>
+    <h1>Жмеринський міський історичний музей</h1>
+    <p>
+        Колекція музею нараховує 3,3 тис. предметів. Унікальними є роботи Заслуженого майстра народної творчості України, 
+        мікромініатюриста Михайла Маслюка, фотографії та листівки станції Жмеринка з краєвидами міста початку ХХ ст. 
+        У експозиційних залах музею представлений побут жмеринчан кінця ХІХ — початку XX століття (меблі, музичні інструменти, 
+        особисті речі, фотокартки та сімейні документи). Працює виставкова зала, де проходять виставки та презентації робіт художників, 
+        майстрів народної творчості та музична вітальня.
+    </p>
+    <center><img src="images/museum.jpg" alt="Жмеринський міський історичний музей" style="width: 100%; height: auto;"></center>
+</div>
+
+<div id="sticky-footer1">
+    <div class="wrap">
+        <p>Більше інформації дивіться на <a href="https://shorturl.at/7hpxP" target="_blank">zhmerynka.city/articles/104924.сом</a></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
